@@ -743,12 +743,13 @@ cursor: pointer;
     }
     .contact{
         min-height: auto;
+        gap: 0;
     }
     
     .contact form{
         width: 100%;
         padding: 0 0;
-        margin-top: -15rem;
+        margin-top: -50rem;
     }
 }
 @media (max-width: 1200px){
