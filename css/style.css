@@ -408,6 +408,7 @@ line-height: 1.2;
     position: relative;
     width: 150px;
     height: 150px;
+    margin: 20px;
 }
   
 .radial-bar svg {
