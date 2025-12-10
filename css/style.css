@@ -589,7 +589,7 @@ line-height: 1.2;
     margin-bottom: 0%;
     visibility: hidden;
     opacity: 0;
-    transform: translateY(-8px);
+    transform: translateY(0);
     transition: opacity 240ms ease, transform 240ms ease, visibility 240ms ease;
     z-index: 110;
 }
@@ -597,13 +597,11 @@ line-height: 1.2;
     max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form{
+    margin-bottom: 0;
     z-index: 110;
     position: relative;
 }
+
 .contact::before{
     content: '';
     position: absolute;
@@ -699,7 +697,7 @@ cursor: pointer;
 
 /* BREAKPOINTS */
 
-@media (max-width: 991px){
+@media (max-width: 1200px){
     .header{
         padding: 2rem 3%;
     }
@@ -709,14 +707,29 @@ cursor: pointer;
     .services{
         padding-bottom: 7rem;
     }
+
+    .circles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
     .portfolio{
         padding-bottom: 7rem;
     }
     .contact{
         min-height: auto;
     }
+    
+    .contact form{
+        width: 100%;
+        padding: 0 0;
+        margin-top: -15rem;
+    }
 }
-@media (max-width: 768px){
+@media (max-width: 1200px){
     #menu-icon{
         display: block;
     }
