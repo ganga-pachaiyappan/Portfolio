@@ -302,8 +302,16 @@ line-height: 1.2;
     width: 100vw;
 }
 
-.skills-wrapper .professional-skills,
+.skills-wrapper .professional-skills{
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px;
+}
+
 .skills-wrapper .technical-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     padding: 0 20px;
